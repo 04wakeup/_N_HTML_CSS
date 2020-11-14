@@ -6,29 +6,47 @@
     <title>Day5</title>
     <link rel="stylesheet" href="styles.css" />
     <style>
+      * {
+        border: 12px solid black;
+      }
       html {
         background-color: tomato;
       }
       body {
-        margin: 0;
-        background-color: white;
+        margin: 20px;
+        padding: 20px;
+        background-color: yellow;
       }
       div {
-        margin-top: 50px;
-        margin-left: 15px;
-        height: 150px;
-        width: 150px;
-        background-color: whitesmoke;
+        padding: 20px;
       }
       span {
-        display: block;
-        background-color: teal;
+        border-style: dotted;
+        /* margin: 20px; */
+        /* padding: 10px; */
+      }
+      #first {
+        background-color: whitesmoke;
+        width: 150px;
+        height: 150px;
+      }
+      #second {
+        background-color: wheat;
+        width: 100px;
+        height: 100px;
+      }
+      #third {
+        background-color: green;
+        width: 50px;
+        height: 50px;
       }
     </style>
   </head>
   <body>
-    <div>a</div>
-    <span>hello</span>
-    <span>hello</span>
+    <div id="first">
+      <div id="second">
+        <div id="third"><span>hello</span></div>
+      </div>
+    </div>
   </body>
 </html>
