@@ -9,51 +9,38 @@
         height: 1000vh;
         margin: 50px;
       }
-
-      /* div:first-child {
-        background-color: tomato;
+      button:focus {
+        background-color: blue;
       }
-      div:last-child {
-        background-color: teal;
-      } */
-      span {
-        background-color: yellowgreen;
-        padding: 5px;
-        border-radius: 10px;
+      a:visited {
+        color: red;
       }
-      div p span {
-        color: white;
+      a:hover {
+        color: teal;
       }
-      div > span {
-        text-decoration: underline;
+      a:focus {
+        color: turquoise;
       }
-      p ~ span {
-        text-decoration: none;
+      form {
+        border: 1px solid salmon;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
       }
-      input {
-        border: 1px solid wheat;
+      form:focus-within {
+        border-color: seagreen;
       }
-      input:required {
-        border-color: tomato;
-      }
-      input[type="password"] {
-        background-color: thistle;
-      }
-      /* input[placeholder*="name"] {
-        background-color: burlywood;
-      } */
-      input[placeholder~="name"] {
-        background-color: burlywood;
+      form:hover input:focus {
+        background-color: sienna;
       }
     </style>
   </head>
   <body>
-    <div>
-      <form action="">
-        <input type="text" placeholder="first named" />
-        <input type="text" placeholder="last named" />
-        <input type="password" placeholder="password" required />
-      </form>
-    </div>
+    <a href="https://www.apple.com" target="blank">apple</a>
+    <form action="">
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />
+    </form>
   </body>
 </html>
