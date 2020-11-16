@@ -5,42 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      :root {
+        --main-color: yellowgreen;
+      }
       body {
         height: 1000vh;
         margin: 50px;
       }
-      button:focus {
-        background-color: blue;
-      }
-      a:visited {
+      input::placeholder {
         color: red;
       }
-      a:hover {
-        color: teal;
+      p::selection {
+        color: white;
+        background-color: var(--main-color);
       }
-      a:focus {
-        color: turquoise;
-      }
-      form {
-        border: 1px solid salmon;
-        display: flex;
-        flex-direction: column;
-        padding: 20px;
-      }
-      form:focus-within {
-        border-color: seagreen;
-      }
-      form:hover input:focus {
-        background-color: sienna;
+      p::first-line {
+        color: red;
+        font-size: 30px;
       }
     </style>
   </head>
   <body>
-    <a href="https://www.apple.com" target="blank">apple</a>
     <form action="">
-      <input type="text" />
-      <input type="text" />
-      <input type="text" />
+      <input type="text" placeholder="name" />
     </form>
+    <p>djf;dlkfdjlkfjdkfsd;fdskldjfsfsdjflsjf;jsdfs</p>
   </body>
 </html>
