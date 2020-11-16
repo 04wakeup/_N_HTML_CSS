@@ -34,11 +34,8 @@ div {
   height: 300px;
 }
 
-article {
-}
-
 article > div {
-  margin: 30px 20px;
+  margin: 20px 20px;
   background-color: white;
   box-shadow: 1px 1px 11px gray;
 }
@@ -59,10 +56,22 @@ article > div:last-child {
 p {
   font-size: 20px;
   font-weight: bold;
-  padding: 0 0 0 10px;
+  padding: 10px 0 0 10px;
+}
+p:nth-child(even) {
+  padding-top: 0px;
 }
 
-article > div > div {
-  height: 30%;
+.content {
+  position: relative;
+  height: 400px;
+  width: 200px;
+  background-color: yellow;
+}
+
+.content__child {
+  padding-top: 0px;
+  height: 100px;
+  width: 100%;
   background-color: white;
 }
